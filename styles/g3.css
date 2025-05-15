@@ -51,7 +51,7 @@
     font-size: 3rem;
 }
 
-.main-section {
+.main-section,footer {
     max-width: 1440px;
     margin: 0px auto;
 }
@@ -149,8 +149,48 @@ main>section {
 #quick-list {
     font-weight: 500;
 }
+/* feature part */
+#feature-title{
+    border-left: 7px solid #FF900E;
+    padding-left: 20px;
+}
+.feature-card{
+    box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+    margin-bottom: 20px;
+    border-radius: 8px;
+    padding: 30px;
+}
+.feature-card .feature-title{
+    font-weight: 600;
+    font-size: 1.25rem;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.features{
+    gap: 140px;
+     
+}
 
+#experince-badges{
+     padding: 45px 42px;
+    font-size: 1.5rem;
+   background-color: #FF900E;
+   border: none;
+   border-radius: 8px;
+    font-weight: 500;
+    color: white;
+    margin-left: -92px;
+    margin-top: -100px;
+}
+#experince-year{
+   
+    font-size: 4rem;
+     font-weight: 700;
 
+}
+.feature-archeter img{
+    width: 100%;
+}
 /* some facts */
 .fact-des {
     max-width: 540px;
@@ -161,6 +201,8 @@ main>section {
     grid-template-columns: repeat(4, 1fr);
     /* border: 1px solid orange; */
     gap: 124px;
+    /* align-content: center;
+    justify-content: center; */
 
 
 }
@@ -204,7 +246,15 @@ main>section {
      filter: grayscale(100%);
 }
 
-
+/* footer style */
+.footer-title{
+    background-color: #FFF4E7;
+    padding: 40px 410px;
+    font-weight: 400;
+    font-size: 1.25rem;
+    border-radius: 8px;
+    margin-top: 130px;
+}
 
 
 
@@ -214,7 +264,8 @@ main>section {
 
     .navbar,
     .nav-link,
-    .teams {
+    .teams,
+    .features {
         flex-direction: column;
     }
 
@@ -235,7 +286,8 @@ main>section {
 
     .ours-features,
     .section-title,
-    .sponser-des {
+    .sponser-des,
+    .feature-des {
         margin: 20px;
     }
     .sponser-des{
@@ -248,6 +300,18 @@ main>section {
     .fact-des {
         padding-left: 15px;
     }
+    #experince-badges{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        width: 100%;
+        margin: 20px;
+    }
+    .footer-title{
+        margin-top: 50px;
+        padding: 10px;
+        text-align: justify;
+        margin-left: 20px;
+    }
 
 }
 
@@ -259,8 +323,20 @@ main>section {
         margin: 10px auto;
         padding: 20px;
     }
+    #experince-badges{
+      
+        margin: 20px;
 
-    .teams {
+    }
+    #experince-badges img{
+          width: 100%;
+
+    }
+    #feature-title,.feature-des{
+        margin-left: 30px;
+    }
+
+    .teams,.features {
         flex-direction: column;
     }
 
@@ -282,6 +358,10 @@ main>section {
     }
     .sponser-des{
         text-align: justify;
+    }
+    .footer-title{
+        padding: 20px;
+        text-align: center;
     }
 
 }
